@@ -7,7 +7,7 @@
     "workers": {                                                                                                                                                      
         "Username": {                                                                                                                                     
             "password": "password",                                                                                                                                
-            "start_coords": [0, 1173]                                                                                                                                    
+            "start_coords": [0, 0]                                                                                                                                    
         }                                                                                                                                                             
     }                                                                                                                                                                 
 }      
