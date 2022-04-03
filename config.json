@@ -1,0 +1,13 @@
+{                                                                                                                                                                     
+    "image_path": "unknown.png",                                                                                                                                      
+    "image_start_coords": [1278, 313],                                                                                                                                
+    "thread_delay": 2,                                                                                                                                                
+    "unverified_place_frequency": false,                                                                                                                              
+    "compact_logging": true,                                                                                                                                          
+    "workers": {                                                                                                                                                      
+        "Emotional_Atyachar_3": {                                                                                                                                     
+            "password": "Rishabh2021",                                                                                                                                
+            "start_coords": [1, 1]                                                                                                                                    
+        }                                                                                                                                                             
+    }                                                                                                                                                                 
+}      
