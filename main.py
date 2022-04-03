@@ -9,6 +9,7 @@ import time
 import threading
 import sys
 import random
+import array
 from io import BytesIO
 from websocket import create_connection
 from PIL import ImageColor
@@ -19,6 +20,9 @@ from bs4 import BeautifulSoup
 
 
 from mappings import color_map, name_map
+
+x_offset = array.array('i', [0, 1000, 0, 1000])
+y_offset = array.array('i', [0, 0, 1000, 1000])
 
 
 class PlaceClient:
@@ -165,8 +169,8 @@ class PlaceClient:
             "Thread #{} : Attempting to place {} pixel at {}, {}",
             thread_index,
             self.color_id_to_name(color_index_in),
-            x + (1000 * canvas_index),
-            y,
+            x + x_offset[canvas_index],
+            y + y_offset[canvas_index]
         )
 
         url = "https://gql-realtime-2.reddit.com/query"
@@ -350,7 +354,7 @@ class PlaceClient:
         # TODO: Multiply by canvas_details["canvasConfigurations"][i]["dx"] and canvas_details["canvasConfigurations"][i]["dy"] instead of hardcoding it
         new_img_width = int(canvas_details["canvasWidth"]) * 2
         logger.debug("New image width: {}", new_img_width)
-        new_img_height = int(canvas_details["canvasHeight"])
+        new_img_height = int(canvas_details["canvasHeight"]) * 2
         logger.debug("New image height: {}", new_img_height)
 
         new_img = Image.new("RGB", (new_img_width, new_img_height))
@@ -618,6 +622,9 @@ class PlaceClient:
                     while pixel_x_start > 999:
                         pixel_x_start -= 1000
                         canvas += 1
+                    while pixel_y_start > 999:
+                        pixel_y_start -= 1000
+                        canvas += 2
 
                     # draw the pixel onto r/place
                     next_pixel_placement_time = self.set_pixel_and_check_ratelimit(
