@@ -21,6 +21,10 @@ This is a script to draw an image onto r/place (<https://www.reddit.com/r/place/
 ## Requirements
 
 - [Latest Version of Python 3](https://www.python.org/downloads/)
+- Install required dependencies 
+```
+pip3 install --upgrade bs4 requests websocket websocket-client Pillow loguru click bs4
+```
 
 ## MacOSX
 If you are using MacOSX and encounter an SSL_CERTIFICATE error. Please apply the fix detailed https://stackoverflow.com/questions/42098126/mac-osx-python-ssl-sslerror-ssl-certificate-verify-failed-certificate-verify  
@@ -68,6 +72,11 @@ Note: Please use https://jsonlint.com/ to check that your JSON file is correctly
 - Change image.jpg/png to specify what image to draw. One pixel is drawn every 5 minutes. PNG takes priority over JPG.
 
 ## Run the Script
+
+Install the requirements first
+```shell
+pip3 install --upgrade bs4 requests websocket websocket-client Pillow loguru click bs4
+```
 
 ### Windows
 
