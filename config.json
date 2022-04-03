@@ -5,8 +5,8 @@
     "unverified_place_frequency": false,                                                                                                                              
     "compact_logging": true,                                                                                                                                          
     "workers": {                                                                                                                                                      
-        "Emotional_Atyachar_3": {                                                                                                                                     
-            "password": "Rishabh2021",                                                                                                                                
+        "reddit-username": {                                                                                                                                     
+            "password": "reddit password",                                                                                                                                
             "start_coords": [1, 1]                                                                                                                                    
         }                                                                                                                                                             
     }                                                                                                                                                                 
