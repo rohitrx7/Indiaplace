@@ -1,13 +1,13 @@
 {                                                                                                                                                                     
-    "image_path": "unknown.png",                                                                                                                                      
-    "image_start_coords": [1278, 313],                                                                                                                                
+    "image_path": "India342x92.jpg",                                                                                                                                      
+    "image_start_coords": [0, 1173],                                                                                                                                
     "thread_delay": 2,                                                                                                                                                
     "unverified_place_frequency": false,                                                                                                                              
     "compact_logging": true,                                                                                                                                          
     "workers": {                                                                                                                                                      
-        "reddit-username": {                                                                                                                                     
-            "password": "reddit password",                                                                                                                                
-            "start_coords": [1, 1]                                                                                                                                    
+        "Username": {                                                                                                                                     
+            "password": "password",                                                                                                                                
+            "start_coords": [0, 1173]                                                                                                                                    
         }                                                                                                                                                             
     }                                                                                                                                                                 
 }      
